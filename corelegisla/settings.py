@@ -25,12 +25,15 @@ SECRET_KEY = 'django-insecure-zf3huajanf-!_g)owr$64fvpss_)hp@7j8_gi_pdvxf2*cik_h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '172.26.129.237',
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'legisla',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,8 +78,12 @@ WSGI_APPLICATION = 'corelegisla.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'legisla',
+        'USER': 'postgres',
+        'PASSWORD': '123qwe123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 

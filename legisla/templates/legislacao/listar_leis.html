@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Leis</title>
+</head>
+<body>
+    <h1>Lista de Leis</h1>
+    <ul>
+        {% for lei in leis %}
+        <li>{{ lei.numero }} - {{ lei.titulo }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

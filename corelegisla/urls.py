@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from legisla.views import listar_leis
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path(
+        # 'admin/', admin.site.urls
+        '', listar_leis, name='listar_leis'
+    ),
+
 ]
