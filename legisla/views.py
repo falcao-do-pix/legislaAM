@@ -6,4 +6,3 @@ from .models import Lei
 def listar_leis(request):
     leis = Lei.objects.all()
     return render(request, 'legislacao/listar_leis.html', {'leis': leis})
-
