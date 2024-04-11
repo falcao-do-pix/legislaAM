@@ -1,0 +1,13 @@
+
+.main-content-container {
+    padding-top: 40px;
+    background-color: #98b8a0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
