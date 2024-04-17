@@ -1,41 +1,44 @@
 .header-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    display: none;
 }
 
-.test {
+.header-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    background-color: #b4f7b6;
+    background-color: #49D7D7;
     padding: 40px;
 }
 
 .header-form {
-    display: flex;
-    width: 100%;
+    display: none;
     gap: 10px;
 }
 
-.header-form input, .header-form button {
-    outline: none;
-    border: none;
-    font-weight: 600;
-}
-
-.header-form input {
-    border-radius: 5px;
-    width: 100%;
-    height: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: inherit;
-}
-
-.header-form button {
-    background-color: #717af4;
-    border-radius: 100px;
-    padding: 5px 10px;
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     cursor: pointer;
+}
+
+.mobile-menu-bar {
+    height: 6px;
+    background-color: #e0e0e0;
+    transition: .2s;
+}
+
+.mobile-menu-bar:nth-child(2) {
+    width: 35px;
+}
+
+.mmb {
+    width: 50%;
+}
+
+.mobile-menu:hover .mmb {
+    width: 100%;
+}
+
+.mobile-menu:hover .mobile-menu-bar {
+    background-color: #1A4043;
 }
