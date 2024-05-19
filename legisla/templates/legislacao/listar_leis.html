@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal-content"></div>
+    </div>
 
     <header class="header">
         <div class="header-links">
@@ -35,7 +38,7 @@
                 <button>PESQUISAR</button>
             </form>
 
-            <a href="" class="header-info"></a>
+            <button class="header-info"></button>
         </div>
     </header>
 
@@ -141,17 +144,16 @@
         </div>
     </main>
 
-
     <footer class="footer">
-        <img src="./img/logo-imprensa.png" alt="" class="press-logo">
-
+        
         <div class="footer-item">
-            <div class="txf-5">
+            <img src="./img/logo-imprensa.png" alt="" class="press-logo">
+            <div class="txf-5 contact-info">
                 <p>Rua Doutor Machado, 86 - Centro</p>
                 <p>CEP: 69.020-015 Manaus/AM</p>
             </div>
 
-            <div class="txf-5">
+            <div class="txf-5 contact-info">
                 <a href="mailto:legisla.am@imprensaooficial.am.gov.br"
                     class="footer-item-contact">legisla.am@imprensaoficial.am.gov.br</a>
                 <a href="tel:+559221017500" class="footer-item-contact">(92) 2101-7500</a>
@@ -182,10 +184,13 @@
             <a href="" class="txf-5">Vídeos</a>
         </div>
 
-        <img src="./img/logo-governo.png" alt="" class="government-logo">
+        <div class="footer-item">
+            <img src="./img/logo-governo.png" alt="" class="government-logo">
+        </div>
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

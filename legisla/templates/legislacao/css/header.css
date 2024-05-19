@@ -16,7 +16,8 @@
     padding: 1rem;
 }
 
-.header-form, .header-info {
+.header-form,
+.header-info {
     display: none;
 }
 
@@ -69,10 +70,6 @@
     z-index: 1;
 }
 
-body {
-    position: relative;
-}
-
 .sidebar {
     top: 0px;
     display: flex;
@@ -100,7 +97,7 @@ body {
     transform: initial;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .mobile-menu {
         display: none;
     }
@@ -144,5 +141,17 @@ body {
         cursor: pointer;
         background-color: var(--pc-2);
         color: var(--c-2);
+    }
+
+    .header-info {
+        all: unset;
+        background-image: url(../img/svg/info.svg);
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
+
+    .sidebar-container {
+        display: none;
     }
 }

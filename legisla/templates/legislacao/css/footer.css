@@ -3,6 +3,7 @@
    z-index: 2;
    background-color: var(--c-1);
    padding: 20px;
+   box-sizing: border-box;
 }
 
 .footer-item {
@@ -12,7 +13,7 @@
    gap: 5px;
 }
 
-.footer-item + .footer-item {
+.footer-item+.footer-item {
    margin-top: 20px;
 }
 
@@ -44,12 +45,10 @@
    background-image: url(../img/svg/phone.svg);
 }
 
-
-.press-logo, .government-logo {
+.press-logo,
+.government-logo {
    display: block;
    margin: 0 auto;
-   padding-top: 20px;
-   padding-bottom: 20px;
 }
 
 .press-logo {
@@ -60,4 +59,34 @@
    height: 140px;
 }
 
-@media screen and (min-width: 1000px) {}
+@media screen and (min-width: 1000px) {
+   .footer {
+      display: flex;
+      justify-content: space-around;
+   }
+
+   .footer-item {
+      align-items: flex-start;
+   }
+
+   .footer-item p {
+      text-align: start;
+   }
+
+   .footer-item-contact {
+      justify-content: flex-start;
+   }
+
+   .footer-item-contact+.footer-item-contact {
+      margin-top: 5px;
+   }
+
+   .contact-info+.contact-info {
+      margin-top: 10px;
+   }
+
+   .press-logo,
+   .government-logo {
+      margin: initial;
+   }
+}
