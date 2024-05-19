@@ -1,16 +1,19 @@
-.main-content-container {
+.main {
     background-color: var(--pc-2);
-    display: grid;
-    grid-template-columns: 1fr;
     position: relative;
     padding-top: 100px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .main-content {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
     gap: 10px;
-    padding: 10px 40px;
 }
 
 .content-1>p {
@@ -63,9 +66,36 @@
     top: 10px;
 }
 
-.info {
+.main-info {
     margin-top: 40px;
-    margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1000px) {}
+/* Header Form */
+@media screen and (min-width: 800px) {}
+
+/* Desktop Version */
+@media screen and (min-width: 1200px) {
+    .main {
+        padding: 40px;
+    }
+
+    .main-content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .content-1, .content-2 {
+        padding: 0 60px;
+    }
+
+    .content-2 {
+        position: relative;
+        padding: 0 80px;
+        border-left: 1px solid #f7f7f7;
+    }
+
+    .law-content {
+        max-width: 400px;
+    }
+}
