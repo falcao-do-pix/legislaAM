@@ -1,3 +1,9 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
 .header-links {
     display: none;
 }
@@ -7,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--sc-1);
-    padding: 25px;
+    padding: 1rem;
 }
 
 .header-form {
@@ -16,7 +22,7 @@
 }
 
 .header-logo img {
-    height: 50px;
+    height: 55px;
 }
 
 .mobile-menu {
@@ -49,22 +55,25 @@
 }
 
 .sidebar-container {
-    position: absolute;
+    position: fixed;
+    width: 100%;
     top: 0px;
     bottom: 0px;
-    width: 100%;
-    height: 100vh;
+    padding-top: 100px;
     background-color: var(--pc-2);
     transform: translateX(-100%);
-    transition: .3s;
+    transition: .2s;
+    z-index: 1;
+}
+
+body {
+    position: relative;
 }
 
 .sidebar {
-    position: sticky;
     top: 0px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 20px 0px;
 }
 
@@ -88,8 +97,4 @@
     transform: initial;
 }
 
-body {
-    height: 200vh;
-}
-
-@media screen and (max-width: 100%) {}
+@media screen and (min-width: 1000px) {}

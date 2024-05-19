@@ -1,0 +1,62 @@
+.footer {
+   position: relative;
+   z-index: 3;
+   background-color: var(--c-1);
+}
+
+.footer-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+
+.footer-item + .footer-item {
+   margin-top: 20px;
+}
+
+.footer-item a:hover {
+   text-decoration: underline;
+}
+
+.footer-item-contact {
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer-item-contact::before {
+   content: '';
+   display: inline-block;
+   width: 1rem;
+   height: 1rem;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.footer-item-contact:nth-child(1)::before {
+   background-image: url(../img/svg/mail.svg);
+}
+
+.footer-item-contact:nth-child(2)::before {
+   background-image: url(../img/svg/phone.svg);
+}
+
+
+.press-logo, .government-logo {
+   display: block;
+   margin: 0 auto;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.press-logo {
+   height: 50px;
+}
+
+.government-logo {
+   height: 140px;
+}
+
+@media screen and (min-width: 1000px) {}
